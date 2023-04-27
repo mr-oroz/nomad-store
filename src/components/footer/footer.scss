@@ -1,0 +1,46 @@
+@import "../../assets/styles/mixin.scss";
+
+.footer {
+  .content {
+    @include SpaceBetween;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 74px;
+    a {
+      color: #4b5563;
+      @include Work400;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 5px 0;
+    }
+  }
+  .contack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .active {
+    font-weight: 600 !important;
+    color: #1f2937 !important;
+  }
+  .about {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      height: 280px;
+      justify-content: center;
+    }
+    li {
+      margin: 15px 0;
+      width: 296px;
+    }
+    a {
+      @include Work400;
+      color: #4b5563;
+    }
+  }
+
+}

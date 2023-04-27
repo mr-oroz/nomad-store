@@ -1,0 +1,83 @@
+@import "./assets/styles/fonts.scss";
+@import "./assets/styles/mixin.scss";
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo {
+  color: #000000;
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #1f2937;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #4b5563;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.page-text,
+.page-length {
+  @include Work400;
+  color: #4b5563;
+}
+.page-text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.page-length {
+  font-size: 24px;
+  line-height: 24px;
+  align-self: flex-start;
+  margin-bottom: 48px;
+}
+
+.page-title {
+  @include Work600;
+  font-size: 36px;
+  line-height: 36px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+.review {
+  h3,
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: #1f2937;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    @include Inter800;
+    margin-bottom: 48px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+    @include Inter400;
+  }
+}
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.text16 {
+  @include Work400;
+  font-size: 16px;
+  line-height: 16px;
+}

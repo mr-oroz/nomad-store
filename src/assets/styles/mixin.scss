@@ -1,0 +1,37 @@
+@import './fonts.scss';
+
+@mixin Work400 {
+  font-family: 'Work sans';
+  font-weight: 400;
+}
+@mixin Work600 {
+  font-family: 'Work sans';
+  font-weight: 600;
+}
+@mixin Work700 {
+  font-family: 'Work sans';
+  font-weight: 700;
+}
+@mixin  Inter600 {
+  font-family: 'Inter';
+  font-weight: 600;
+}
+@mixin  Inter800 {
+  font-family: 'Inter';
+  font-weight: 800;
+}
+@mixin  Inter400 {
+  font-family: 'Inter';
+  font-weight: 400;
+}
+@mixin CenterPosisition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin SpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

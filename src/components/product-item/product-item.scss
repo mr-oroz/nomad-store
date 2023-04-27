@@ -1,0 +1,6 @@
+@import "../../assets/styles/mixin.scss";
+.product-item {
+  .description {
+    @include SpaceBetween;
+  }
+}

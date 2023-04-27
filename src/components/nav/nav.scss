@@ -1,0 +1,59 @@
+@import "../../assets/styles/mixin.scss";
+.nav {
+  .content {
+    @include SpaceBetween;
+    padding: 37px 0;
+    position: relative;
+  }
+  .content::after, .content::before {
+    position: absolute;
+    width: 100px;
+    content: '';
+    border: 1px solid #E5E7EB;
+    left: 0;
+  }
+  .content::before {
+    top: 0;
+  }
+  .content::after {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  a {
+    color: #1F2937;
+    @include Work400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 25px;
+  }
+
+  .active {
+    font-weight: 700;
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding-left: 0;
+    @include  SpaceBetween;
+  }
+  .search {
+    @include CenterPosisition;
+    background-color: #F3F4F6;
+    width: 328px;
+    height: 42px;
+    padding: 0 14px;
+    color: #4B5563;
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      background: none;
+      color: #4B5563;
+    }
+    input::placeholder {
+      color: #4B5563;
+    }
+  }
+}

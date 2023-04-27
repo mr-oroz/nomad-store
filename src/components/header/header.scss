@@ -1,0 +1,26 @@
+@import "../../assets/styles/mixin.scss";
+.header {
+  padding: 25px 0;
+  .content {
+    @include SpaceBetween;
+    margin-bottom: 24px;
+  }
+  .person {
+    a {
+      color: #1f2937;
+      @include CenterPosisition;
+      font-style: normal;
+      @include Work400;
+      font-size: 16px;
+      line-height: 16px;
+      padding-left: 25px;
+    }
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 0;
+    @include SpaceBetween;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../assets/styles/mixin.scss";
+
+.our-product {
+  position: relative;
+  height: 600px;
+  width: 406px;
+  overflow: hidden;
+  cursor: pointer;
+  img,
+  h3 {
+    position: absolute;
+  }
+  img {
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: .7s;
+  }
+
+  h3 {
+    transition: 0.7s;
+    left: 38px;
+    top: 85%;
+    z-index: 2;
+    @include Work600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+  }
+}
+.our-product:hover img {
+  transform: scale(1.1);
+}
+.our-product:hover h3 {
+  opacity: 0.3;
+}
+.our-product::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  transition: .7s;
+}
+.our-product:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}

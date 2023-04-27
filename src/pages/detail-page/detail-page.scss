@@ -1,0 +1,88 @@
+@import "../../assets/styles/mixin.scss";
+
+.detail-page {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+  &__mainImg {
+    width: 776px;
+    height: 405px;
+  }
+  &__variants {
+    @include SpaceBetween;
+    gap: 16px;
+    width: 776px;
+    img {
+      cursor: pointer;
+      width: 248px;
+      height: 119px;
+    }
+  }
+  &__right {
+    width: 405px;
+    h2 {
+      @include Work600;
+      font-size: 24px;
+      line-height: 24px;
+      color: #1f2937;
+    }
+  }
+  &__rating-product {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span {
+      @include Work400;
+      color: #4b5563;
+    }
+  }
+  &__rating-number {
+    font-size: 18px;
+    line-height: 150%;
+    margin-right: 17px;
+  }
+  &__rating-text {
+    text-decoration: solid underline;
+    margin-left: 17px;
+  }
+  &__right-price,
+  &__rating-text,
+  &__right-text {
+    color: #4b5563;
+    @include Work400;
+  }
+  &__right-price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  &__rating-text,
+  &__right-text {
+    font-size: 14px;
+  }
+  &__colors{
+    display: flex;
+  }
+  .color-item{
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+  .color-item1 {
+    background-color: #F9A8D4;;
+  }
+  .color-item2 {
+    background-color: #EF4444;
+  }
+  .color-item3 {
+    background-color: #F59E0B;
+  }
+  .color-item4 {
+    background-color: #E5E7EB;
+  }
+}

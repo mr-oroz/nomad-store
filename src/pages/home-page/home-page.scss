@@ -1,0 +1,14 @@
+@import "../../assets/styles/mixin.scss";
+
+.home-page {
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 24px;
+    @include Work600;
+  }
+  &__our-products {
+    @include SpaceBetween;
+    margin-bottom: 48px;
+  }
+}

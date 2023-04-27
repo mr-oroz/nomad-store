@@ -1,0 +1,41 @@
+@import "../../assets/styles/mixin.scss";
+
+.about-us {
+  position: relative;
+  height: 724px;
+  width: 625px;
+  margin-bottom: 48px;
+  img {
+    position: absolute;
+    z-index: 1;
+  }
+  &__text {
+    position: absolute;
+    width: 625px;
+    height: 378px;
+    background-color: #1f2937;
+    padding: 45px 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 105% !important;
+    z-index: 2;
+    p,
+    h1,
+    h3 {
+      color: #fff;
+    }
+    p {
+      @include Inter400;
+      font-size: 16px;
+    }
+    h1 {
+      @include Inter800;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    h3 {
+      @include Inter400;
+      font-size: 18px;
+    }
+  }
+}
